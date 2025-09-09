@@ -29,3 +29,13 @@ The lab focused on Tasty Bytes, a global food truck company, and used AI to anal
 ## Disclaimer
 
 This is a learning project based on a Snowflake-provided lab. The data and core concepts are from Snowflake Quickstarts.
+
+## Data
+
+This lab utilizes sample data (customer reviews, images, and audio files) provided by Snowflake and hosted on a public S3 bucket.
+
+**The data is automatically loaded when you run the `setup.sql` script.** The script creates external stages that reference the following location:
+
+`s3://sfquickstarts/tastybytes-voc/`
+
+You do not need to download any data manually. The SQL `COPY INTO` and stage `TO_FILE()` commands will seamlessly ingest the data directly from this source into your Snowflake tables and stages.
